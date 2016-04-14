@@ -17,7 +17,7 @@
 <![CDATA[
 
 	var r = new ActiveXObject("WScript.Shell").Exec("notepad.exe");
-	self.Close;
+	
 ]]>
 </script>
 
